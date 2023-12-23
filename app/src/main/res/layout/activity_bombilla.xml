@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bombilla.BombillaActivity">
+    <LinearLayout
+        android:id="@+id/layout_bombillaActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container_bombilla"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:name="com.example.practicanavegacion1.bombilla.ImagenBombillaFragment"
+            tools:layout="@layout/fragment_imagen_bombilla" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container_botones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:name="com.example.practicanavegacion1.bombilla.BotonesBombillaFragment"
+            tools:layout="@layout/fragment_botones_bombilla"
+             />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
